@@ -16,6 +16,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <selenium-java.version>4.7.2</selenium-java.version>
     <sl4j.version>2.0.6</sl4j.version>
+    <commons-configuration.version>1.6</commons-configuration.version>
   </properties>
 
   <dependencies>
@@ -43,6 +44,11 @@
       <version>${sl4j.version}</version>
       <type>pom</type>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>${commons-configuration.version}</version>
     </dependency>
   </dependencies>
 </project>
