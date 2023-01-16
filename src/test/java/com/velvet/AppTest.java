@@ -14,6 +14,8 @@ public class AppTest
     {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.google.es");
         Thread.sleep(2000);
